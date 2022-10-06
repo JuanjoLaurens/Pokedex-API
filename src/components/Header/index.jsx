@@ -44,6 +44,17 @@ const Header = () => {
             <i className="material-icons mr-2">favorite</i>
             Favoritos
           </NavLink>
+          <NavLink
+          active={isActive(paths.client.HOME)}
+            as={Link}
+            to={paths.client.HOME}
+            className="d-inline-flex align-items-center font-weight-bold"
+            >
+          <a className="material-icons mr-2" hre=""><img src="https://img.icons8.com/officel/40/000000/pokedex.png" alt="pokedex-logo" /></a>
+            Maestro Pokemon
+          </NavLink>
+          
+
         </Nav>
       </Container>
     </Navbar>
