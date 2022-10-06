@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'address',
+        'city',
+        'birhdate',
     ];
 
     /**
@@ -32,6 +35,8 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    public $timestamp=false;
 
     /**
      * The attributes that should be cast.
