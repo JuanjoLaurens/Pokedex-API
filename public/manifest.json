@@ -1,6 +1,6 @@
 {
-  "name": "js-pokedex",
-  "short_name": "js-pokedex",
+  "name": "Api-pokedex",
+  "short_name": "Api-pokedex",
   "start_url": "index.html",
   "icons": [
     {

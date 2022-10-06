@@ -7,25 +7,12 @@
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="./icon-256x256.png">
   <meta name="theme-color" content="#138496">
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/pokestop-blue.png">
   <title>APIPOKEDEX</title>
+  
 </head>
 <body>
   <div id="app"></div>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('serviceWorker.js', { scope: '/' }).then(function(registration) {
-          console.log('Worker registration successful', registration.scope);
-        }, function(err) {
-          console.log('Worker registration failed', err);
-        }).catch(function(err) {
-          console.log(err);
-        });
-      });
-    } else {
-      console.log('Service Worker is not supported by browser.');
-    }
-  </script>
 </body>
 </html>

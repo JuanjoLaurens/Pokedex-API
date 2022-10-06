@@ -1,4 +1,4 @@
-let CACHE_NAME = 'js-pokedex';
+let CACHE_NAME = 'Api-pokedex';
 const urlsToCache = ['/', '/index.html'];
 
 self.addEventListener('install', function (event) {

@@ -1,6 +1,6 @@
 import cn from 'classnames/bind';
 import React, { memo } from 'react';
-import { Container, Navbar, Nav, NavLink, Button } from 'react-bootstrap';
+import { Container, Navbar, Nav, NavLink, Button, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import styles from './styles.scss';
@@ -45,15 +45,25 @@ const Header = () => {
             Favoritos
           </NavLink>
           <NavLink
-          active={isActive(paths.client.HOME)}
             as={Link}
-            to={paths.client.HOME}
+            to="/edit-profile"
             className="d-inline-flex align-items-center font-weight-bold"
-            >
-          <a className="material-icons mr-2" hre=""><img src="https://img.icons8.com/officel/40/000000/pokedex.png" alt="pokedex-logo" /></a>
-            Maestro Pokemon
+          >
+            <img src="https://img.icons8.com/ios-filled/50/000000/star-pokemon.png"/>
+          
+            Msestro Pokemon
+          </NavLink>
+          <NavLink
+            as={Link}
+            to="/logout"
+            className="d-inline-flex align-items-center font-weight-bold"
+          >
+            Logout
           </NavLink>
           
+
+
+
 
         </Nav>
       </Container>
