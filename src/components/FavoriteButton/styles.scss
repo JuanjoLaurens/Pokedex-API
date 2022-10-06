@@ -1,0 +1,20 @@
+@import '../../scss/bootstrap';
+
+.pd-favorite {
+  transition: .2s transform;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  border: none !important;
+  height: 50px;
+  width: 50px;
+  background-color: $white !important;
+
+  outline: none !important;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

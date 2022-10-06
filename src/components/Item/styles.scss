@@ -1,0 +1,20 @@
+.pd-card {
+  cursor: pointer;
+  img {
+    transition: .2s padding;
+  }
+
+  &:hover {
+    img {
+      padding: 16px !important;
+    }
+  }
+}
+
+.pd-favorite {
+  &__wrapper {
+    position: absolute;
+    bottom: 68px;
+    right: 10px;
+  }
+}

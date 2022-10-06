@@ -1,0 +1,102 @@
+{
+  "name": "pokedex-api",
+  "version": "1.0.0",
+  "description": "Api pokedex react, fetch by Juan Laurens",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development --env development",
+    "build": "webpack --mode production",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonioErdeljac/react-pokedex.git"
+  },
+  "author": "Antonio Erdeljac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonioErdeljac/react-pokedex/issues"
+  },
+  "homepage": "https://github.com/AntonioErdeljac/react-pokedex#readme",
+  "dependencies": {
+    "axios": "0.21.0",
+    "babel-loader": "8.1.0",
+    "bootstrap": "4.5.3",
+    "circular-dependency-plugin": "5.2.0",
+    "classnames": "2.2.6",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.5",
+    "enzyme-to-json": "3.6.1",
+    "framer-motion": "2.9.4",
+    "jest-transform-css": "2.1.0",
+    "keymirror": "0.1.1",
+    "lodash": "4.17.20",
+    "prop-types": "15.7.2",
+    "query-string": "6.13.6",
+    "react": "17.0.1",
+    "react-bootstrap": "1.4.0",
+    "react-dom": "17.0.1",
+    "react-loading-skeleton": "2.1.1",
+    "react-redux": "7.2.2",
+    "react-router-dom": "6.2.2",
+    "react-visibility-sensor": "5.1.1",
+    "redux": "4.0.5",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@babel/plugin-transform-react-jsx": "7.12.1",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "@babel/preset-react": "7.12.1",
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.6.1",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "5.0.0",
+    "eslint": "7.12.1",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "4.5.0",
+    "husky": "4.3.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.6.1",
+    "lint-staged": "10.5.0",
+    "node-sass": "4.14.1",
+    "postcss": "8.1.4",
+    "postcss-loader": "4.0.4",
+    "postcss-preset-env": "6.7.0",
+    "prettier": "2.1.2",
+    "sass-loader": "10.0.4",
+    "style-loader": "2.0.0",
+    "stylelint": "13.8.0",
+    "stylelint-config-sass-guidelines": "7.1.0",
+    "webpack": "5.3.1",
+    "webpack-cli": "4.1.0",
+    "webpack-dev-server": "3.11.0"
+  }
+}
