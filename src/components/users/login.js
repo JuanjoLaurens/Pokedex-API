@@ -1,7 +1,25 @@
+import style from "./style.scss";
+import Header from "../Header";
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 const Login = () => {
-    return(
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (localStorage.getItem('user-info')) {
+            navigate.push("/")
+        }
+    }, [])
+    return (
+
         <div>
-            OJALA FUNCIOEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            <Header />
+            <h1>
+                OJALA FUNCIOEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            </h1>
         </div>
     )
 

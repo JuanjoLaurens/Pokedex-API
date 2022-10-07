@@ -2,6 +2,7 @@ import cn from 'classnames/bind';
 import React, { memo } from 'react';
 import { Container, Navbar, Nav, NavLink, Button, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 import styles from './styles.scss';
 import logo from './images/logo.png';
@@ -17,6 +18,7 @@ const Header = () => {
   return (
     <Navbar fixed="top" className="mb-5 shadow-sm" bg="#FFD700">
       <Container className="d-inline-flex align-items-center justify-content-center">
+
         <Navbar.Brand className="mr-0" as={Link} to={paths.client.HOME}>
           <img
             height="90"
@@ -49,8 +51,8 @@ const Header = () => {
             to="/edit-profile"
             className="d-inline-flex align-items-center font-weight-bold"
           >
-            <img src="https://img.icons8.com/ios-filled/50/000000/star-pokemon.png"/>
-          
+            <img src="https://img.icons8.com/ios-filled/50/000000/star-pokemon.png" />
+
             Msestro Pokemon
           </NavLink>
           <NavLink
@@ -60,7 +62,7 @@ const Header = () => {
           >
             Logout
           </NavLink>
-          
+
 
 
 
