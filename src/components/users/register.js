@@ -9,13 +9,6 @@ import Header from '../Header';
 
 const Register = () => {
 
-    // useEffect(()=>{
-    //     if(localStorage.getItem('user-info')){
-    //         navigate.push("/")
-    //     }
-    // },[])
-
-
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -39,8 +32,7 @@ const Register = () => {
 
     }
     return (
-        <>
-        <Header />
+
             
         <form>
         <div className="container">
@@ -62,7 +54,7 @@ const Register = () => {
 
         </div>
         </form>
-        </>
+
     );
 
 
