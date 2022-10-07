@@ -1,5 +1,44 @@
 @import '../../scss/bootstrap';
 
-h1{
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1 {
     padding-top: 300px;
+}
+
+.form-register {
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+}
+
+.form-register img {
+    width: 500px;
+    height: auto;
+    margin-left: 60%;
+}
+
+.input-t {
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.btn-send {
+    margin-left: 88%;
+    margin-top: 20px;
+
+}
+
+.btn-login {
+    margin-left: 88%;
+    margin-top: 20px;
+    width: 30px;
+
+}
+
+.name_data {
+    margin-left: 20%;
+    margin-top: 20px;
 }

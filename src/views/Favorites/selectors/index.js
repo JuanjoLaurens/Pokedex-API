@@ -1,5 +1,5 @@
 import { filters } from '../../../utils';
-
+import Header from '../../../components/Header';
 const selectors = {
   favorites: (state) => {
     const search = filters.search(state.favorites.data, state.favorites.search);

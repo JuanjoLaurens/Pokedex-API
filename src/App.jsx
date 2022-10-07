@@ -20,7 +20,7 @@ const App = () => (
       <Route>
           <Route path='login' element={<Login />} />
           <Route path='register' element={<Register />} />
-          <Route path='edit-profile' element={<UpdateUser />} />
+          <Route path='edit-profile/:id' element={<UpdateUser />} />
         </Route>
         {routes.map((route) => (
           <Route
